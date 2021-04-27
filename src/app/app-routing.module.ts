@@ -1,14 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomePageComponent } from './home/home-page/home-page.component';
-import { ToDoPageComponent } from './to-do/components/to-do-page/to-do-page.component';
-import { UserPageComponent } from './user/components/user-page/user-page.component';
 
 const routes: Routes = [
-
   { path: '', component: HomePageComponent },
-  { path: 'user', component: UserPageComponent },
-  { path: 'toDo', component: ToDoPageComponent }
+  { path: 'user', loadChildren: () => import('./user/user.module').then(m => m.UserModule) },
+  { path: 'toDo', loadChildren: () => import('./to-do/to-do.module').then(m => m.ToDoModule) }
 ];
 
 @NgModule({

@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { UserComponent } from './components/user/user.component';
 import { FormsModule } from '@angular/forms';
 import { UserPageComponent } from './components/user-page/user-page.component';
-import { ToDoModule } from '../to-do/to-do.module';
+import { UserRoutingModule } from './user-routing.module';
 
 
 
@@ -15,7 +15,7 @@ import { ToDoModule } from '../to-do/to-do.module';
   imports: [
     CommonModule,
     FormsModule,
-    ToDoModule
+    UserRoutingModule
   ]
 })
 export class UserModule { }
