@@ -1,0 +1,23 @@
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <form class="col-10 col-sm-8 col-lg-4">
+            <div class="mb-3">
+                <label class="form-label" for="firstName">Prénom</label>
+                <input type="text" class="form-control" id="firstName" [(ngModel)]="firstName" name="firstName">
+            </div>
+        
+            <div class="mb-3">
+                <label class="form-label" for="lastName">Nom</label>
+                <input type="text" class="form-control" id="lastName" [(ngModel)]="lastName" name="lastName">
+            </div>
+        
+        
+            <div class="mb-3">
+                <label class="form-label" for="password">Mot de passe</label>
+                <input type="password" class="form-control" id="password" [(ngModel)]="password" name="password">
+            </div>
+        
+            <button type="submit" class="btn btn-primary">Modifier</button>
+        </form>
+    </div>
+</div>

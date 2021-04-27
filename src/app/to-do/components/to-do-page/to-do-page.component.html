@@ -1,0 +1,9 @@
+<div class="container-fluid">
+    <div class="row justify-content-center mt-5">
+        <h3>To Do Liste</h3>
+    </div>
+</div>
+
+<app-to-do-list [toDoItems]="toDoItems"></app-to-do-list>
+
+<app-to-do-add (itemAdded)="itemAdded($event)"></app-to-do-add>
